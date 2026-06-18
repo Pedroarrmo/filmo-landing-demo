@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #111111;
+  color: #f5f5f5;
+}
+
+.page {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  padding: 72px 0;
+}
+
+.hero {
+  max-width: 760px;
+  padding: 80px 0;
+}
+
+.eyebrow {
+  margin-bottom: 16px;
+  color: #b8ff4d;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(44px, 8vw, 88px);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.intro {
+  max-width: 620px;
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #d6d6d6;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 22px;
+  background: #b8ff4d;
+  color: #111111;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  padding: 24px;
+  background: #1d1d1d;
+  border: 1px solid #333333;
+  border-radius: 24px;
+}
+
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.card p {
+  margin: 0;
+  color: #c8c8c8;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding: 32px 0;
+  }
+
+  .hero {
+    padding: 48px 0;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
