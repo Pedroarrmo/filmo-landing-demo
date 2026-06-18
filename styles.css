@@ -87,6 +87,11 @@ h1 {
     padding: 48px 0;
   }
 
+  .stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+}
   .features {
     grid-template-columns: 1fr;
   }
